@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = 'utf-8'>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Thai Spot</title>
+
+</head>
+<body>
+    
+    <script src="main.js"></script>
+    <script src="map.js"></script>
+    <div class="header">
+
+        <video autoplay loop class="back-video" muted plays-inline>
+            <source src="media/thailand-video.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <img src = "media/thai-flag.png" class = "logo" alt = "Picture of the Thai Flag">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">About</a></li>
+                <li class="btn">Sign up</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Thai Spot</h1>
+
+            <!-- <button onclick="openmap()">Click me</button> -->
+
+
+            <form action="search.html" onsubmit="openmap()">
+                <input type="text" id="txtInput" placeholder="&#x270e; Enter Location">
+                <button type="button">Search</button>
+            </form>
+
+            <div class="category-list">
+                <button onclick=cat1func() id="cat1" class="category1">
+                    <img src="media/food-white.png">
+                    <span class="category-text">Food</span>
+                </button>
+                <button onclick=cat2func() id="cat2" class="category2">
+                    <img src="media/temple-white.png">
+                    <span class="category-text">Temple</span>
+                </button>
+                <button onclick=cat3func() id="cat3" class="category3">
+                    <img src="media/market-white.png">
+                    <span class="category-text">Market</span>
+                </button>     
+                <button onclick=cat4func() id="cat4" class="category4">
+                    <img src="media/massage-white.png">
+                    <span class="category-text">Massage</span>
+                </button>
+                <button onclick=cat5func() id="cat5" class="category5">
+                    <img src="media/muay-thai-white.png">
+                    <span class="category-text">Muay Thai</span>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    
+    
+</body>
+</html>
