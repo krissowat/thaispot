@@ -91,7 +91,7 @@ body{
     padding: 0 20px;
     font-size: 18px;
 }
-.content form button{
+.content button{
     background: #EF3340;
     color: #fff;
     padding: 15px 40px;
@@ -220,3 +220,14 @@ body{
         height: 100%;
     }
 }
+
+#map {
+    position: absolute; 
+    top: 200px; 
+    bottom: 0; 
+    left: 150px; 
+    right: 0;
+    height: 500px; /* The height is 400 pixels */
+    width: 1000px; /* The width is the width of the web page */
+  }
+  
